@@ -4,7 +4,7 @@ namespace module_01_workshop
 {
     class Program
     {
-        static void hello_world()
+        static void DisplayHelloWorld()
         {
             Console.WriteLine("Hello World!");
         }
@@ -14,10 +14,12 @@ namespace module_01_workshop
             // Hello world
             Console.WriteLine("Hello World!");
 
-            // Hello world with variables
+            // Hello world with strings
             string hello = "Hello ";
             string world = "World!";
             string result = hello + world;
+            // or alternatively string result = string.Concat(hello, world);
+            Console.WriteLine($"{hello}{world}");
             Console.WriteLine(result);
 
             // Hello world with input
@@ -28,7 +30,7 @@ namespace module_01_workshop
             Console.WriteLine(input);
             
             // Hello world with function
-            hello_world();
+            DisplayHelloWorld();
         }
     }
 }
